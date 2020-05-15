@@ -1,0 +1,20 @@
+<h1>Result Page</h1>
+<a href="{% url 'home' %}">go to home</a>
+<br/>
+<br/>
+<h3>Total word count : {{word_count}}</h3>
+
+{% for word,count in dict_words %}
+
+<h3>{{word}} - {{count}}</h3>
+
+{% endfor %}
+<!-- 
+<label>My Name is : </label>{{name}} <br/>
+<label>My Age is : </label>{{ age }} <br/>
+
+
+{{message}} -->
+
+
+{{article}}

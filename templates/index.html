@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Welcome to Homepage</h1>
+<!-- {{ key1 }} -->
+<!-- <a href="{% url 'result' %}">Result</a> -->
+
+<form action="{% url 'result' %}">
+	{% csrf_token %}
+	<textarea cols="40" rows="20" name="article"></textarea>
+	<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>
